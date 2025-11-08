@@ -80,3 +80,10 @@ Pada analisis ini digunakan tiga model yaitu Decision Tree, Naive Bayes, dan K-N
 
 Hasil akurasi yang relatif rendah disebabkan oleh adanya banyaknya kelas kualitas pada data training. Kondisi ini menyebabkan model kesulitan dalam membedakan antar kelas yang memiliki perbedaan kecil pada nilai fitur kimia. Selain itu, penggunaan model klasifikasi juga memiliki keterbatasan dalam kasus seperti ini, karena nilai kualitas wine bersifat kontinu. 
 
+**REKOMENDASI** 
+
+**Rekomendasi Untuk Model** 
+
+1. **Menambahkan Data dan Variasi Vitur** : Model dapat ditingkatkan dengan cara penambahan lebih banyak data wine seprti jenis atau tahun produksi.
+2. **Penyetelan Hyperparameter** : elakukan penyetelan parameter pada model, terutama untuk algoritma seperti Decision Tree dan KNN, dapat membantu meningkatkan akurasi.
+3. **Pendekatan Regresi** : Mengolah data menggunakan model regresi seperti Linear Regression, Random Forest Regressor, atau XGBoost Regressor agar hasil prediksi kualitas wine menjadi lebih akurat dan representatif. 
