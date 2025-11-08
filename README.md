@@ -13,3 +13,35 @@ Oleh karena itu, analisis data ditugaskan untuk mengembangkan model prediksi yan
 **TUJUAN** 
 
 Berdasarkan konteks dan permasalahan yang telah dijelaskan, tujuan dari proyek ini adalah untuk membangun model machine learning yang dapat memprediksi kualitas wine menggunakan data kimiawi dari wine merah dan wine putih. Dengan begitu, diharapkan dapat membantu produsen dalam mengoptimalkan proses produksi dan menjaga standar kualitas produk secara berkelanjutan.
+
+**Data Set**
+
+Data yang digunakan pada analisis prediksi adalah dataset Wine Quality yang berisi fitur-fitur kimiawi dari anggur merah dan putih serta nilai kualitasnya. Setiap baris dalam dataset merepresentasikan satu sampel wine, sedangkan setiap kolom menggambarkan karakteristik atau atribut kimia yang berbeda. Adapun variabel-variabel yang terdapat dalam dataset ini adalah sebagai berikut:
+
+Fixed Acidity : menunjukkan jumlah asam non-volatile yang tidak mudah menguap selama proses fermentasi, seperti asam tartarat.
+
+Volatile Acidity : kadar asam yang mudah menguap, seperti asam asetat.
+
+Citric Acid : salah satu asam alami yang menambah kesegaran dan kestabilan rasa wine.
+
+Residual Sugar : jumlah gula yang tersisa setelah proses fermentasi selesai.
+
+Chlorides : kandungan garam (natrium klorida) yang memengaruhi rasa dan kestabilan kimiawi wine.
+
+Free Sulfur Dioxide : bentuk bebas dari sulfur dioksida yang berfungsi sebagai pengawet dan pelindung terhadap oksidasi.
+
+Total Sulfur Dioxide : total kandungan sulfur dioksida dalam wine.
+
+Density : tingkat kerapatan cairan wine, yang berhubungan erat dengan kadar alkohol dan gula.
+
+pH : menunjukkan tingkat keasaman wine, yang memengaruhi rasa, warna, dan kestabilan produk.
+
+Sulphates : senyawa yang berperan dalam pembentukan aroma serta meningkatkan efek pengawetan wine.
+
+Alcohol : kadar alkohol dalam wine.
+
+Quality : skor kualitas pada wine.
+
+Id : identitas unik untuk setiap sampel wine.
+
+Dataset ini mencakup berbagai fitur penting yang dapat digunakan untuk mempelajari hubungan antara komposisi kimia dan kualitas wine. Dengan memahami hubungan tersebut, dapat dilakukan proses analisis dan pemodelan untuk memperkirakan nilai kualitas dari wine berdasarkan karakteristik kimiawinya.
