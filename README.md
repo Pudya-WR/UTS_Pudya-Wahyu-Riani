@@ -70,7 +70,13 @@ Setelah model telah dibuat, maka diperoleh hasil akurasi dari masing-masin gmode
 2. Model Naive Bayes sebesar 0.51
 3. Model K-Nearest Neighbors (KNN) sebesar 0.55
 
-Dari hasil tersebut dapat disimpulkan bahwa Decision Tree memiliki performa terbaik di antara ketiga model yang digunakan.Nilai akurasi yang relatif rendah ini disebabkan oleh sifat dataset yang memiliki banyak kelas kualitas (*multiclass classification*), sehingga proses klasifikasi menjadi lebih kompleks.
+Dari hasil tersebut dapat disimpulkan bahwa Decision Tree memiliki performa terbaik di antara ketiga model yang digunakan. Nilai akurasi yang relatif rendah ini disebabkan oleh sifat dataset yang memiliki banyak kelas kualitas (*multiclass classification*), sehingga proses klasifikasi menjadi lebih kompleks.
 
 Selain itu, hasil prediksi menunjukkan bahwa kelas kualitas yang terbentuk dari data wine berkisar antara 3 hingga 8, yang berarti terdapat enam kelas utama yaitu 3, 4, 5, 6, 7, dan 8. Hal ini menunjukkan variasi kualitas yang cukup luas di antara sampel yang ada, yang menjadi tantangan tersendiri dalam pemodelan dan prediksi kualitas wine.
+
+**KESIMPULAN**
+
+Pada analisis ini digunakan tiga model yaitu Decision Tree, Naive Bayes, dan K-Nearest Neighbors (KNN). Masing-masing diperoleh tiga hasil akurasi yang berbeda-beda dan diketahui bahwa hasil akurasi dari model Decision Tree merupakan yang paling baik diantara dua model lainnya, meskipun secara keseluruhan tingkat akurasi yang diperoleh masih tergolong sedang.
+
+Hasil akurasi yang relatif rendah disebabkan oleh adanya banyaknya kelas kualitas pada data training. Kondisi ini menyebabkan model kesulitan dalam membedakan antar kelas yang memiliki perbedaan kecil pada nilai fitur kimia. Selain itu, penggunaan model klasifikasi juga memiliki keterbatasan dalam kasus seperti ini, karena nilai kualitas wine bersifat kontinu. 
 
