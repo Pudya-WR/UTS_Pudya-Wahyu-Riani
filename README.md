@@ -1,14 +1,14 @@
 **KONTEKS**
 
-Dalam industri minuman beralkohol, khususnya produksi wine, kualitas merupakan faktor utama yang menentukan nilai jual dan reputasi suatu merek. Kualitas wine dapat dipengaruhi oleh berbagai faktor kimiawi seperti fixed acidity, volatile acidity , citric acid , dll. Penilaian kualitas biasanya dilakukan oleh panel ahli wine taster, yang tentunya membutuhkan waktu dan biaya yang cukup besar. Oleh karena itu, penting bagi produsen wine untuk memiliki metode otomatis yang mampu memprediksi kualitas wine berdasarkan karakteristik kimiawinya.
+Dalam industri minuman beralkohol, khususnya produksi wine, kualitas merupakan faktor utama yang menentukan nilai jual dan reputasi suatu merek. Kualitas wine dapat dipengaruhi oleh berbagai faktor kimiawi seperti *fixed acidity*, *volatile acidity* , *citric acid* , dll. Penilaian kualitas biasanya dilakukan oleh panel ahli *wine taster*, yang tentunya membutuhkan waktu dan biaya yang cukup besar. Oleh karena itu, penting bagi produsen *wine* untuk memiliki metode otomatis yang mampu memprediksi kualitas wine berdasarkan karakteristik kimiawinya.
 
-Dataset Wine Quality menyediakan data mengenai komposisi kimia dari wine merah (red wine) dan wine putih (white wine), beserta nilai kualitasnya yang diberikan oleh para ahli. Data ini membuka peluang untuk membangun model prediksi berbasis machine learning yang dapat membantu memperkirakan kualitas wine tanpa harus melakukan pengujian manual
+Dataset *Wine Quality* menyediakan data mengenai komposisi kimia dari wine merah (*red wine*) dan wine putih (*white wine*), beserta nilai kualitasnya yang diberikan oleh para ahli. Data ini membuka peluang untuk membangun model prediksi berbasis *machine learning* yang dapat membantu memperkirakan kualitas wine tanpa harus melakukan pengujian manual.
 
 **PROBLEM STATEMENT** 
 
-Produsen wine menghadapi tantangan dalam menilai kualitas produk secara objektif dan efisien. Proses evaluasi manual tidak hanya memakan waktu, tetapi juga bergantung pada subjektivitas penilai. Dengan adanya dataset yang memuat berbagai variabel kimia seperti fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, sulphates, alcohol, dan variabel lainnya, diperlukan suatu pendekatan analitik untuk mengidentifikasi hubungan antara fitur-fitur kimiawi tersebut dengan tingkat kualitas wine. 
+Produsen wine menghadapi tantangan dalam menilai kualitas produk secara objektif dan efisien. Proses evaluasi manual tidak hanya memakan waktu, tetapi juga bergantung pada subjektivitas penilai. Dengan adanya dataset yang memuat berbagai variabel kimia seperti *fixed acidity*, *volatile acidity*, *citric acid*, *residual sugar*, *chlorides*, *sulphates*, *alcohol*, dan variabel lainnya, diperlukan suatu pendekatan analitik untuk mengidentifikasi hubungan antara fitur-fitur kimiawi tersebut dengan tingkat kualitas wine. 
 
-Oleh karena itu, analisis data ditugaskan untuk mengembangkan model prediksi yang mampu mengklasifikasikan tingkat kualitas wine berdasarkan fitur kimiawi, sekaligus mengetahui faktor-faktor utama yang paling berpengaruh terhadap peningkatan atau penurunan kualitas. Masalah ini penting karena kualitas merupakan indikator utama dalam menentukan nilai pasar dan kepuasan konsumen. Dengan memiliki model prediksi yang akurat, produsen dapat melakukan kontrol kualitas lebih awal dan menjaga konsistensi produk mereka di pasar.
+Oleh karena itu, analisis data ditugaskan untuk mengembangkan model prediksi yang mampu mengklasifikasikan tingkat kualitas wine berdasarkan fitur kimiawi. Masalah ini penting karena kualitas merupakan indikator utama dalam menentukan nilai pasar dan kepuasan konsumen. Dengan memiliki model prediksi yang akurat, produsen dapat melakukan kontrol kualitas lebih awal dan menjaga konsistensi produk mereka di pasar.
 
 **TUJUAN** 
 
@@ -16,9 +16,9 @@ Berdasarkan konteks dan permasalahan yang telah dijelaskan, tujuan dari proyek i
 
 **DATA SET**
 
-Data yang digunakan pada analisis prediksi adalah dataset Wine Quality yang berisi fitur-fitur kimiawi dari anggur merah dan putih serta nilai kualitasnya. Setiap baris dalam dataset merepresentasikan satu sampel wine, sedangkan setiap kolom menggambarkan karakteristik atau atribut kimia yang berbeda. Adapun variabel-variabel yang terdapat dalam dataset ini adalah sebagai berikut:
+Data yang digunakan pada analisis prediksi adalah dataset *Wine Quality* yang berisi fitur-fitur kimiawi dari anggur merah dan putih serta nilai kualitasnya. Setiap baris dalam dataset merepresentasikan satu sampel wine, sedangkan setiap kolom menggambarkan karakteristik atau atribut kimia yang berbeda. Adapun variabel-variabel yang terdapat dalam dataset ini adalah sebagai berikut:
 
-**Fixed Acidity** : menunjukkan jumlah asam non-volatile yang tidak mudah menguap selama proses fermentasi, seperti asam tartarat.
+**Fixed Acidity** : menunjukkan jumlah asam *non-volatile* yang tidak mudah menguap selama proses fermentasi, seperti asam tartarat.
 
 **Volatile Acidity** : kadar asam yang mudah menguap, seperti asam asetat.
 
@@ -48,11 +48,11 @@ Dataset ini mencakup berbagai fitur penting yang dapat digunakan untuk mempelaja
 
 **PROSES CLEANING DATA**
 
-Sebelum dilakukan proses pemodelan, tahap awal yang dilakukan adalah pembersihan data (data cleaning). Pada tahap ini, data diperiksa untuk memastikan tidak terdapat nilai yang hilang (missing values) atau nilai yang tidak diinginkan. Lalu setelah diketahui anomali yang terdapat pada data dilakukan penanganan pada data seperti melakukan proses normalisasi, drop row maupun standarisasi. 
+Sebelum dilakukan proses pemodelan, tahap awal yang dilakukan adalah pembersihan data (*data cleaning*). Pada tahap ini, data diperiksa untuk memastikan tidak terdapat nilai yang hilang (*missing values*) atau nilai yang tidak diinginkan. Lalu setelah diketahui anomali yang terdapat pada data dilakukan penanganan pada data seperti melakukan proses normalisasi, *drop row* maupun standarisasi. 
 
 **PEMBANTUKAN MODEL**
 
-Setelah data dilakukan proses sleaning selanjutnyat data masuk kedalam proses pembentukan model dengan menggunakan data training yang telah disediakan. Terdapat 3 model yang digunakan yaitu Decision Tree, Naive Bayes, dan K-Nearest Neighbors (KNN).
+Setelah data dilakukan proses *cleaning* selanjutnya data masuk kedalam proses pembentukan model dengan menggunakan data training yang telah disediakan. Terdapat 3 model yang digunakan yaitu **Decision Tree, Naive Bayes, dan K-Nearest Neighbors (KNN)**.
 
 **Decision Tree** : merupakan algoritma yang bekerja dengan membentuk struktur pohon keputusan untuk memetakan fitur terhadap label target.
 
@@ -64,7 +64,7 @@ Setelah ketiga model dibuat maka akan dibandingkan hasil akurasi dari ketiga mod
 
 **HASIL**
 
-Setelah model telah dibuat, maka diperoleh hasil akurasi dari masing-masin gmode tersebut.Adapun nilai akurasi dari masing-masing model adalah sebagai berikut :
+Model telah dibuat, maka diperoleh hasil akurasi dari masing-masing model tersebut.Adapun nilai akurasi dari masing-masing model adalah sebagai berikut :
 
 1. Model Decision Tree sebesar 0.59
 2. Model Naive Bayes sebesar 0.51
@@ -78,12 +78,12 @@ Selain itu, hasil prediksi menunjukkan bahwa kelas kualitas yang terbentuk dari 
 
 Pada analisis ini digunakan tiga model yaitu Decision Tree, Naive Bayes, dan K-Nearest Neighbors (KNN). Masing-masing diperoleh tiga hasil akurasi yang berbeda-beda dan diketahui bahwa hasil akurasi dari model Decision Tree merupakan yang paling baik diantara dua model lainnya, meskipun secara keseluruhan tingkat akurasi yang diperoleh masih tergolong sedang.
 
-Hasil akurasi yang relatif rendah disebabkan oleh adanya banyaknya kelas kualitas pada data training. Kondisi ini menyebabkan model kesulitan dalam membedakan antar kelas yang memiliki perbedaan kecil pada nilai fitur kimia. Selain itu, penggunaan model klasifikasi juga memiliki keterbatasan dalam kasus seperti ini, karena nilai kualitas wine bersifat kontinu. 
+Hasil akurasi yang relatif rendah disebabkan oleh banyaknya kelas kualitas pada data training. Kondisi ini menyebabkan model kesulitan dalam membedakan antar kelas yang memiliki perbedaan kecil pada nilai. Selain itu, penggunaan model klasifikasi juga memiliki keterbatasan dalam kasus seperti ini.
 
 **REKOMENDASI** 
 
 **Rekomendasi Untuk Model** 
 
 1. **Menambahkan Data dan Variasi Vitur** : Model dapat ditingkatkan dengan cara penambahan lebih banyak data wine seprti jenis atau tahun produksi.
-2. **Penyetelan Hyperparameter** : elakukan penyetelan parameter pada model, terutama untuk algoritma seperti Decision Tree dan KNN, dapat membantu meningkatkan akurasi.
+2. **Penyetelan Hyperparameter** : melakukan penyetelan parameter pada model, terutama untuk algoritma seperti Decision Tree dan KNN, dapat membantu meningkatkan akurasi.
 3. **Pendekatan Regresi** : Mengolah data menggunakan model regresi seperti Linear Regression, Random Forest Regressor, atau XGBoost Regressor agar hasil prediksi kualitas wine menjadi lebih akurat dan representatif. 
